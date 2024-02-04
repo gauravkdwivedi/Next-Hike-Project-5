@@ -6,7 +6,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import MinMaxScaler
 
 # Load the cleaned dataset
-df = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_engagement_data.xlsx')
+df = pd.read_excel('user_engagement_data.xlsx')
 
 print(df)
 
@@ -155,4 +155,4 @@ plt.show()
 # The plot shows a clear elbow point, it suggests that there is a natural grouping in the data, and the optimal k is the value at the elbow.
 
 # Export user_engagement_matrics
-df[['MSISDN/Number', 'Session_Frequency', 'Session_Duration', 'Total_Traffic', 'engagement_cluster']].to_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_engagement_metrics.xlsx', index=False)
+df[['MSISDN/Number', 'Session_Frequency', 'Session_Duration', 'Total_Traffic', 'engagement_cluster']].to_excel('user_engagement_metrics.xlsx', index=False)

@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 # Load the cleaned dataset
-df = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/telcom_data_cleaned.xlsx')
+df = pd.read_excel('telcom_data_cleaned.xlsx')
 
 # Find the top 10 'Handset Type'
 df['Handset Type'].value_counts().head(10)

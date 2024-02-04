@@ -4,19 +4,19 @@ import plotly.graph_objects as go
 from PIL import Image
 
 # Load the cleaned dataset
-telcom_data = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/telcom_data_cleaned.xlsx')
+telcom_data = pd.read_excel('telcom_data_cleaned.xlsx')
 
 # Load the user_engagement_data
-user_engagement_data = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_engagement_data.xlsx')
+user_engagement_data = pd.read_excel('user_engagement_data.xlsx')
 
 # Load user engagement metrics
-engagement_metrics = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_engagement_metrics.xlsx')
+engagement_metrics = pd.read_excel('user_engagement_metrics.xlsx')
 
 # Load user experience metrics
-experience_metrics = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_experience_metrics.xlsx')
+experience_metrics = pd.read_excel('user_experience_metrics.xlsx')
 
 # Load user satisfaction metrics
-satisfaction_metrics = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_satisfaction_metrics.xlsx')
+satisfaction_metrics = pd.read_excel('user_satisfaction_metrics.xlsx')
 
 # Page setting
 st.set_page_config(layout='wide')

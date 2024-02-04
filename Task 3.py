@@ -7,7 +7,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import StandardScaler
 
 # Load the cleaned dataset
-df = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/telcom_data_cleaned.xlsx')
+df = pd.read_excel('telcom_data_cleaned.xlsx')
 
 print(df)
 
@@ -180,4 +180,4 @@ plt.ylabel('Avg_RTT (Standardized)')
 plt.show()
 
 # Export experience_metrics
-experience_metrics[['MSISDN/Number', 'Avg_TCP_Retransmission', 'Avg_RTT', 'Handset_Type', 'Avg_Throughput', 'experience_cluster']].to_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_experience_metrics.xlsx', index=False)
+experience_metrics[['MSISDN/Number', 'Avg_TCP_Retransmission', 'Avg_RTT', 'Handset_Type', 'Avg_Throughput', 'experience_cluster']].to_excel('user_experience_metrics.xlsx', index=False)

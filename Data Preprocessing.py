@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 # Load the dataset
-df = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/telcom_data.xlsx')
+df = pd.read_excel('telcom_data.xlsx')
 print(df)
 
 # Check data information
@@ -61,4 +61,4 @@ df.isnull().sum()
 print(df)
 
 # Export cleaned data
-df.to_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/telcom_data_cleaned.xlsx')
+df.to_excel('telcom_data_cleaned.xlsx')

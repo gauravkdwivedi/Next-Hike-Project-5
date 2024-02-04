@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
 # Load the cleaned dataset
-df = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/users_behavior_data.xlsx')
+df = pd.read_excel('users_behavior_data.xlsx')
 print(df)
 
 # Remove undwated column

@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Load the cleaned dataset
-df = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/telcom_data_cleaned.xlsx')
+df = pd.read_excel('telcom_data_cleaned.xlsx')
 
 print(df)
 
@@ -46,4 +46,4 @@ user_engagement_data = df.groupby('MSISDN/Number').agg({
 print(user_engagement_data)
 
 # Export user_engagement_data
-user_engagement_data.to_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_engagement_data.xlsx', index=False)
+user_engagement_data.to_excel('user_engagement_data.xlsx', index=False)

@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 # Load the cleaned dataset
-df = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/telcom_data_cleaned.xlsx')
+df = pd.read_excel('telcom_data_cleaned.xlsx')
 
 # Create new dataset for user behavior
 user_behavior_data = df[['Bearer Id', 'MSISDN/Number', 'Start ms', 'End ms', 'Dur. (ms)', 'Total DL (Bytes)', 'Total UL (Bytes)', 
@@ -49,4 +49,4 @@ user_behavior_data = user_behavior_data.groupby('MSISDN/Number').agg({
 print(user_behavior_data)
 
 # Export users_behavior_data
-user_behavior_data.to_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/users_behavior_data.xlsx')
+user_behavior_data.to_excel('users_behavior_data.xlsx')

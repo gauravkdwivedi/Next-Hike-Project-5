@@ -10,11 +10,11 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import r2_score
 
 # Load user engagement metrics
-user_engagement_metrics = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_engagement_metrics.xlsx')
+user_engagement_metrics = pd.read_excel('user_engagement_metrics.xlsx')
 print(user_engagement_metrics)
 
 # Load user experience metrics
-user_experience_metrics = pd.read_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_experience_metrics.xlsx')
+user_experience_metrics = pd.read_excel('user_experience_metrics.xlsx')
 print(user_experience_metrics)
 
 
@@ -115,4 +115,4 @@ print(cluster_aggregation)
 
 
 # Export the results to a new Excel file
-user_satisfaction_metrics.to_excel('C:/Users/gaura/OneDrive/Visual Studio/NextHike Project 5/user_satisfaction_metrics.xlsx', index=False)
+user_satisfaction_metrics.to_excel('user_satisfaction_metrics.xlsx', index=False)
